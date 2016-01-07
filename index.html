@@ -16,7 +16,7 @@ limitations under the License.
 <!DOCTYPE html>
 <html>
   <head>
-    <style type="text/css">
+    <!--style type="text/css">
 	  body {
 	    overflow:hidden;
 	  }
@@ -33,11 +33,12 @@ limitations under the License.
 	    font-family:Verdana, Geneva, sans-serif;
 	    font-size:40px;
 	}
-    </style>
+    </style-->
     <title>Cast Hello Text</title>
   </head>
   <body>
-	<div id="message">Talk to me</div>
+  	<iframe src="https://flex-poker.herokuapp.com/"></iframe>
+	<!--div id="message">Talk to me</div-->
     <script type="text/javascript" src="//www.gstatic.com/cast/sdk/libs/receiver/2.0.0/cast_receiver.js"></script>
     <script type="text/javascript">
       window.onload = function() {
@@ -94,7 +95,7 @@ limitations under the License.
       // utility function to display the text message in the input field
       function displayText(text) {
         console.log(text);
-        document.getElementById("message").innerHTML=text;
+        //document.getElementById("message").innerHTML=text;
         window.castReceiverManager.setApplicationState(text);
       };
     </script>
