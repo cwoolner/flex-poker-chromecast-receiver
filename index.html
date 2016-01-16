@@ -33,26 +33,17 @@ limitations under the License.
 	    font-family:Verdana, Geneva, sans-serif;
 	    font-size:40px;
 	}
-    .test {
-    	display: flex;
-    	flex-direction: row;
-    	border: 1px solid red;
-    }
     </style>
     <title>Cast Hello Text</title>
   </head>
   <body>
-  	<div class="test">
-  		<div>1</div>
-  		<div>2</div>
-  		<div>3</div>
-  		Log</div>
   	<!--iframe src="https://flex-poker.herokuapp.com/"></iframe-->
 	<div id="message">Talk to me</div>
     <script type="text/javascript" src="//www.gstatic.com/cast/sdk/libs/receiver/2.0.0/cast_receiver.js"></script>
     <script type="text/javascript">
       window.onload = function() {
         cast.receiver.logger.setLevelValue(0);
+        debugger;
         window.castReceiverManager = cast.receiver.CastReceiverManager.getInstance();
         console.log('Starting Receiver Manager');
         
